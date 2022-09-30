@@ -1,0 +1,69 @@
+
+<nav  style="margin-left:10vw;" class="navbar navbar-expand-lg navbar-light bg-light">
+
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto fw-bolder fs-5 ">
+        <li class="nav-item active text-dark">
+          <a class="nav-link text-dark" >View you todo's</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logout">Log-out</a>
+        </li>
+       
+      </ul>
+   
+    </div>
+  </nav>
+  <div>
+  <h6 class="texo  text-lowercase text center m-auto">Completed tasks are given at the end of the page</h6>
+  
+  </div>
+  
+  <hr>
+  <div class="container">
+    <div class="texo m-auto">
+    <h1 class="text-center text-dark"  style="width:45vw"> Tasks To Do </h1>
+  
+    </div>
+      <div class="row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div></div>
+        <div class="" *ngFor="let k of data" >
+          <div *ngIf=!k.completed  class="box bg-secondary m-2 todo  ">
+      
+         <div class="checkbox"  ><input  type="checkbox"  id=k.id  (click)="checkValue(k.id,k.completed)" [disabled]=k.completed [checked]=k.completed  >
+         </div>
+        <div class="desc  " > id: {{k.id}} <br>  userId: {{k.userId}} <br>To Do: {{k.title}}
+        </div>
+  
+        </div>
+    
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div class="texo m-auto">
+        <h1 class="text-center text-dark"  style="width:45vw" id="#compl"> Tasks completed</h1>
+      
+        </div>
+      <div class="row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div></div>
+  
+        <div class="" *ngFor="let k of data" >
+          <div *ngIf=k.completed  class="box bg-secondary m-2 todo  ">
+      
+         <div class="checkbox"  ><input  type="checkbox"  id=k.id  (click)="checkValue(k.id,k.completed)" [disabled]=k.completed [checked]=k.completed  >
+         </div>
+        <div class="desc  " > id: {{k.id}} <br>  userId: {{k.userId}} <br>To Do: {{k.title}}
+        </div>
+  
+        </div>
+    
+        </div>
+      </div>
+  </div>

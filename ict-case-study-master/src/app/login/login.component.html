@@ -1,0 +1,27 @@
+
+<div class="container ">
+  
+    <div class="row col col-sm-12 col-md-6 col-lg-4 col-xl-3 ">
+        <!-- <div class="bg-animation">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
+        </div> -->
+        <div class="login"  class=" login border border-dark border-3  bg-light m-auto  p-2 text-center  fw-bold ">
+
+            TO-DO APP
+            <h2 class="text-capitalize" >
+                 login</h2>
+            <input [(ngModel)]="username"  type="text" id="username">
+            <br>
+            <input [(ngModel)]="password" type="text"  id="password">
+            <br>
+           
+            <button (click)="onclick()" [disabled]="button_valid" id="button" class="black " [class]="whichcolor" >log-in</button>
+            <br>
+            <span class="fw-bolder text-capitalize  " id="notright"> {{greet}}</span>
+            <span class="fw-bolder text-capitalize  " id="right"> {{greetr}}</span>
+            </div>
+    </div>
+</div>

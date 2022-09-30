@@ -1,0 +1,60 @@
+
+
+.container
+{
+  background-image: radial-gradient(#003a64 20%, transparent 20%),
+  radial-gradient(#00ffff 20%, transparent 20%);
+background-color: #ffffff;
+background-position: 0 0, .5px .5px;
+background-size: 5px 5px;
+}
+.todo
+{position: relative;
+    padding: auto;
+    min-height: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+.box
+{
+    display: flex;
+    padding-left: 10px;
+    height: fit-content;
+   
+
+
+}
+h6{
+  font-size:13px;
+padding-top: 15px;
+  color: rgba(154, 154, 145, 0.9);
+}
+.checkbox{
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    margin: 15px;
+    width: 30px;
+height: 30px;
+}
+.desc
+{    margin: 10px;
+     position: relative;
+    
+}
+
+.texo{
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    
+
+    text-align: center;
+}
+.box:hover
+{box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  
+}
